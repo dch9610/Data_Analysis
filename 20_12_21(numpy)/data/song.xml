@@ -1,0 +1,16 @@
+<kpop>
+    <slist>
+        <song album="album1">
+            <singer>singer1</singer>
+            <title>title1</title>
+        </song>
+        <song album="album2">
+            <singer>singer2</singer>
+            <title>title2</title>
+        </song>
+        <song album="album3">
+            <singer>singer3</singer>
+            <title>title3</title>
+        </song>
+    </slist>
+</kpop>
