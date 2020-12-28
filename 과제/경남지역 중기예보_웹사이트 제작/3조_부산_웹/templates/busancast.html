@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/css/modern-business.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3"> 부산지역 날씨 테이블</h1>
+        <table class="table table-bordered">
+          <thead width="300px">
+              <tr>
+                  <th width="100px"><center>도시</center></th>
+                  <th width="100px"><center>날짜</center></th>
+                  <th width="100px"><center>날씨</center></th>
+                  <th width="100px"><center>최저기온</center></th>
+                  <th width="100px"><center>최고기온</center></th>
+              </tr>
+          </thead>
+          <tbody>   
+              {% for busan in busancasts: %}
+              <tr>
+                  <td><center>{{ busan.city }}</center></td>
+                  <td><center>{{ busan.tmef }}</center></td>
+                  <td><center>{{ busan.wf }}</center></td>
+                  <td><center>{{ busan.tmn }}</center></td>
+                  <td><center>{{ busan.tmx }}</center></td>
+              </tr>
+              {% endfor %} 
+          </tbody>
+        </table>
+  </div>
+</body>
+</html>
